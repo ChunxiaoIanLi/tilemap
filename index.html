@@ -8,47 +8,17 @@
 <body>
 <script type="text/javascript">
 	function preload(){
-		game.load.image("forest_1","assets/tiles/Forest Tileset (32x32).png");
-		game.load.image("forest_2","assets/tiles/forest_tiles.png");
-		game.load.image("tree_1","assets/tiles/LPC_WINTERPLZ.png");
-		game.load.image("tree_2","assets/tiles/ttreeyl.png");
-		game.load.image("plants","assets/tiles/plant repack_2.png");
-		game.load.image("rpgpack","assets/tiles/RPGpack_sheet.png");
-		game.load.image("terrain_1","assets/tiles/terrain.png");
-		game.load.image("terrain_2","assets/tiles/terrain2.png");
-		game.load.tilemap("testmap","assets/fml3.json",null, Phaser.Tilemap.TILED_JSON);
+		game.load.image("terrain","assets/tiles/terrain.png");
+		game.load.tilemap("testmap","assets/test.json",null, Phaser.Tilemap.TILED_JSON);
 	};
 
 	
 	function create(){
 		mymap=game.add.tilemap("testmap");
-		mymap.addTilesetImage("Forest Tileset (32x32)","forest_1");
-		mymap.addTilesetImage("forest_tiles","forest_2");
-		mymap.addTilesetImage("LPC_WINTERPLZ","tree_1");
-		mymap.addTilesetImage("ttreeyl","tree_2");
-		mymap.addTilesetImage("plant repack_2","plants");
-		mymap.addTilesetImage("RPGpack_sheet","rpgpack");
-		mymap.addTilesetImage("Terrain","terrain_1");
-		mymap.addTilesetImage("terrain2","terrain_2");
+
+		mymap.addTilesetImage("terrain","terrain");
 		
-		layer1=mymap.createLayer("Tile Layer 1");
-		layer2=mymap.createLayer("Tile Layer 1.5");
-		layer3=mymap.createLayer("Tile Layer 13");
-		layer4=mymap.createLayer("Tile Layer 14");
-		layer5=mymap.createLayer("Tile Layer 15");
-		layer6=mymap.createLayer("Tile Layer 16");
-		layer7=mymap.createLayer("Tile Layer 2");
-		layer8=mymap.createLayer("Tile Layer 3");
-		layer9=mymap.createLayer("Tile Layer 17");
-		layer10=mymap.createLayer("Tile Layer 7");
-		layer11=mymap.createLayer("Tile Layer 8");
-		layer12=mymap.createLayer("Tile Layer 9");
-		layer13=mymap.createLayer("Tile Layer 10");
-		layer14=mymap.createLayer("Tile Layer 11");
-		layer15=mymap.createLayer("Tile Layer 12");
-		layer16=mymap.createLayer("Tile Layer 13");
-		layer17=mymap.createLayer("Tile Layer 18");
-		//layer18=mymap.createLayer("Tile Layer 19");
+		layer18=mymap.createLayer("Tile Layer 19");
 
 		
 		

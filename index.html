@@ -1,34 +1,15 @@
-<doctype html>
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title></title>
-        <script src="phaser.min.js"></script>
-    </head>
+<head>
+	<meta charset="UTF-8" />
+	<title>Phaser Basic Project Template</title>
+    <script src="phaser.js"></script>
+    <script src="phaser_pathfinding-0.2.0.js"></script>
+</head>
 <body>
-<script type="text/javascript">
-	function preload(){
-		game.load.image("terrain","assets/tiles/terrain.png");
-		game.load.tilemap("testmap","assets/test.json",null, Phaser.Tilemap.TILED_JSON);
-	};
 
-	
-	function create(){
-		mymap=game.add.tilemap("testmap");
+<div id="gameContainer"></div>
 
-		mymap.addTilesetImage("terrain","terrain");
-		
-		grass_layer=mymap.createLayer("grass_background");
-		not_grass_layer=mymap.createLayer("not_grass");
-		lilypad_layer=mymap.createLayer("lilypad");
-
-		layer1.resizeWorld();
-	};
-	function update(){
-		
-	};
-	
-	var game=new Phaser.Game(640,640, Phaser.CANVAS, "", {preload:preload,create:create,update:update});
-</script>
+<script type="text/javascript" src="Game.js"></script>
 </body>
 </html>
